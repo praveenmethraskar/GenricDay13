@@ -13,7 +13,7 @@ namespace GenericDay13
             bool check = true;
             while(check)
             {
-                Console.WriteLine("Select option:\n 1.To find find maximum integer \n 2. To find max string \n 3. to find max float");
+                Console.WriteLine("Select option:\n 1.To find find maximum integer \n 2. To find max float \n 3. to find max string");
                 int option = Int32.Parse(Console.ReadLine());
 
                 switch(option)
@@ -23,6 +23,11 @@ namespace GenericDay13
                         int result = obj.FindMaxInteger(20, 30, 25);
                         Console.WriteLine(result+" is maxmium");
                         break;
+                    case 2:
+                        FindMax obj1 = new FindMax();
+                        float result1 = obj1.FindMaxString(20.3f, 20.6f, 20.4f);
+                        Console.WriteLine(result1+" is maxmium");
+                        break ;
                     default:
                         check = false;
                         break;
