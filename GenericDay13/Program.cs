@@ -28,6 +28,11 @@ namespace GenericDay13
                         float result1 = obj1.FindMaxString(20.3f, 20.6f, 20.4f);
                         Console.WriteLine(result1+" is maxmium");
                         break ;
+                    case 3:
+                        FindMax obj2 = new FindMax();
+                        string result2 = obj2.FindMaxString("apple", "boy", "cattle");
+                        Console.WriteLine(result2+" is maxmium");
+                        break;
                     default:
                         check = false;
                         break;
